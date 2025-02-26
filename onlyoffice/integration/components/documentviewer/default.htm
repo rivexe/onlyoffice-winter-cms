@@ -1,0 +1,21 @@
+<!-- START ONLYOFFICE VIEWER -->
+<div id="placeholder"></div>
+<!-- END ONLYOFFICE VIEWER -->
+
+<script type="text/javascript">
+    window.onload = function() {
+        new DocsAPI.DocEditor("placeholder", {{ config|raw }});
+    };
+
+    {% if token %}
+        // Добавляем заголовок с JWT-токеном ко всем запросам к Document Server
+        DocsAPI.DocEditor.defaultConfig.token = '{{ token }}';
+    {% endif %}
+</script>
+
+<style>
+    #placeholder {
+        width: 100%;
+        height: 800px;
+    }
+</style>

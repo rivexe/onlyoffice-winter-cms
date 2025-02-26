@@ -1,0 +1,6 @@
+plugin:
+    name: 'OnlyOffice'
+    description: 'Интеграция с ONLYOFFICE Document Server'
+    author: 'Onlyoffice'
+    icon: icon-file-text
+    homepage: ''

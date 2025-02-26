@@ -1,0 +1,24 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    server_url:
+        label: URL сервера ONLYOFFICE
+        comment: Укажите полный URL-адрес сервера ONLYOFFICE Document Server
+        type: text
+        required: true
+        span: full
+
+    jwt_secret:
+        label: JWT-ключ
+        comment: Укажите секретный ключ для JWT-авторизации (оставьте пустым, если не используется)
+        type: text
+        span: left
+
+    jwt_header:
+        label: Заголовок авторизации
+        comment: Укажите название заголовка для JWT-токена (по умолчанию Authorization)
+        type: text
+        span: right
+        default: Authorization

@@ -1,0 +1,22 @@
+{
+    "name": "onlyoffice/wn-onlyoffice-plugin",
+    "type": "winter-plugin",
+    "description": "Integration with ONLYOFFICE Document Server",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Your Name"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Onlyoffice\\": ""
+        }
+    },
+    "extra": {
+        "installer-name": "onlyoffice"
+    }
+}
